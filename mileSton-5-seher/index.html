@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShreAble  Resume</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Form Section -->
+    <div class="form-container">
+      <h2>Fill Your Resume Details</h2>
+      <form id="resumeForm">
+        <label for="name">Name:</label>
+        <input type="text" id="nameInput" placeholder="Enter your name" />
+
+        <label for="profile">Profile Description:</label>
+        <textarea id="profileInput" placeholder="Enter your profile description"></textarea>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phoneInput" placeholder="Enter your phone number" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="emailInput" placeholder="Enter your email" />
+
+        <label for="address">Address:</label>
+        <input type="text" id="addressInput" placeholder="Enter your address" />
+
+        <label for="education">Education:</label>
+        <textarea id="educationInput" placeholder="Enter your education details"></textarea>
+
+        <label for="experience">Experience:</label>
+        <textarea id="experienceInput" placeholder="Enter your experience"></textarea>
+
+        <label for="skills">Skills (comma-separated):</label>
+        <input type="text" id="skillsInput" placeholder="Enter your skills" />
+
+        <button type="button" id="generateBtn" class="btn">Generate Resume</button>
+        <button type="button" id="downloadBtn" class="btn">Download Resume</button>
+      </form>
+    </div>
+
+    <!-- Resume Section -->
+    <div id="resume" class="resume-container">
+      <!-- Left Panel -->
+      <div class="left-panel">
+        <div class="profile-img">
+          <img id="profileImage" src="/sehr.jpg" alt="Profile" />
+        </div>
+        <h2>PROFILE</h2>
+        <p id="profileDesc">Your profile description will appear here.</p>
+        <h2>CONTACT ME</h2>
+        <ul>
+          <li id="phone">Your phone</li>
+          <li id="email">Your email</li>
+          <li id="address">Your address</li>
+        </ul>
+      </div>
+      <!-- Right Panel -->
+      <div class="right-panel">
+        <h1 id="name">Your Name</h1>
+        <p class="subtitle">Student</p>
+        <div class="section">
+          <h2>EDUCATION</h2>
+          <p id="education">Your education details</p>
+        </div>
+        <div class="section">
+          <h2>EXPERIENCE</h2>
+          <p id="experience">Your experience</p>
+        </div>
+        <div class="section">
+          <h2>SKILLS</h2>
+          <ul id="skillsList">
+            <!-- Skills will appear here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
